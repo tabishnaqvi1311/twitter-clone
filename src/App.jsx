@@ -13,7 +13,7 @@ import Profile from './pages/Profile'
 const App = () => {
 
   return (
-    <>
+    <div className='flex flex-row'>
       <BrowserRouter>
         <SideNav/>
         <Routes>
@@ -26,7 +26,7 @@ const App = () => {
           <Route path='/:user/status/:id' element={<TweetDetail/>}/>
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
